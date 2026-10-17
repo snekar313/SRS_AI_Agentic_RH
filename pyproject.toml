@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bb-options-analyzer"
+version = "0.1.0"
+description = "Read-only analysis of exported BB option activity"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "SRS AI Agentic RH" }]
+dependencies = []
+
+[project.scripts]
+bb-options-analyzer = "bb_options_analyzer.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
